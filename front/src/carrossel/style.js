@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const SlideBox = styled.div`
   width: 100%;
   margin: 0 auto;
-
+  position: relative;
   .slick-dots li.slick-active button:before {
     color: black;
+   min-height: 300px;
   }
   .slideBox Imagem {
     width: 80%;

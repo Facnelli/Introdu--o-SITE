@@ -5,6 +5,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  width: 100%;
+  margin-top:10%;
 `;
 
 export const CardsStyle = styled.div`
@@ -38,5 +40,20 @@ export const Cards = styled.div`
   height: fit-content;
 `;
 
-export const Titulo = styled.h1``;
+export const CampoAreasStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top:10%;
+  background-color: white;
+  text-align: center;
+`;
+
+
+
+export const Titulo = styled.h1`
+  margin-top: 4%; 
+`;
 export const Subtitulo = styled.h3``;

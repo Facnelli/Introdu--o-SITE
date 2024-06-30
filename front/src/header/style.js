@@ -4,10 +4,11 @@ export const HeaderStyle = styled.header`
   margin: 0;
   padding: 10px;
   color: #333;
+  background-color: #ffffff;
   width: 100%;
   border-bottom: 2px solid #007bff;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 `;
 
@@ -31,7 +32,7 @@ export const Titulo = styled.h1`
 export const Nav = styled.nav`
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin: 5px;
   padding: 0;
 `;
 
@@ -42,7 +43,8 @@ export const Li = styled.li`
 export const A = styled.a`
   color: #333;
   font-weight: bold;
-  transition: color 0.2s ease;
+  margin: 10px;
+  transition: color 1s ease;
 
   &:hover {
     color: #007bff;
