@@ -1,11 +1,51 @@
-import { DivHeader, Titulo } from "./style";
-import { GoKebabHorizontal } from "react-icons/go";
+import {
+  HeaderStyle,
+  Li,
+  A,
+  Nav,
+  Navigation,
+  Titulo,
+  Ul,
+  TopStyle,
+  Imagem,
+} from "./style";
+import EngSis from "../Images/EngSis.png";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
+  const navigate = useNavigate();
   return (
-    <DivHeader>
-      <GoKebabHorizontal size={30} style={{ marginLeft: "0px" }} />
-      <Titulo>Engeharia de Sistemas</Titulo>
-    </DivHeader>
+    <HeaderStyle>
+      <img
+        style={{ width: "150px", height: "auto", float: "left" }}
+        src={EngSis}
+        alt="EngSis"
+        onClick={() => navigate("/")}
+      ></img>
+      <TopStyle>
+        <Navigation>
+          <Titulo> Engenharia de Sistemas</Titulo>
+          <Nav>
+            <Ul id="main-Nav">
+              <Li>
+                <A onClick={() => navigate("/")}>Sobre o Curso</A>
+              </Li>
+              <Li>
+                <A onClick={() => navigate("/areas")}>Áreas de Atuação</A>
+              </Li>
+              <Li>
+                <A onClick={() => navigate("/quiz")}>Quiz</A>
+              </Li>
+              <Li>
+                <A>Galeria</A>
+              </Li>
+              <Li>
+                <A>Contato</A>
+              </Li>
+            </Ul>
+          </Nav>
+        </Navigation>
+      </TopStyle>
+    </HeaderStyle>
   );
 }
