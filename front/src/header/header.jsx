@@ -4,8 +4,8 @@ import {
   A,
   Nav,
   Navigation,
-  Titulo,
-  Ul,
+  Titulo, 
+  Ul, 
   TopStyle,
   Imagem,
 } from "./style";
@@ -22,6 +22,9 @@ export function Header() {
         alt="EngSis"
         onClick={() => navigate("/")}
       ></img>
+      <div
+      style={{width: "40vh"}}
+      ></div>
       <TopStyle>
         <Navigation>
           <Titulo> Engenharia de Sistemas</Titulo>

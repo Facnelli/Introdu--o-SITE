@@ -12,7 +12,7 @@ export const Cards = styled.div`
   width: 1000px;
   background-color: #f7f7f7;
   padding: 30px;
-  border-radius: 1%;
+  border-radius: 5%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   display: flex;
