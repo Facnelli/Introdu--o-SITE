@@ -12,7 +12,6 @@ export const HeaderStyle = styled.header`
   align-items: center;
 
   @media (max-width: 800px) {
-    justify-content: first baseline;
   }
 `;
 
@@ -44,8 +43,12 @@ export const Nav = styled.nav`
 
 export const Li = styled.li`
   margin: 0 10px;
+
   @media (max-width: 800px) {
+    padding: 0px;
+    margin: 0px;
     font-size: 10px;
+    display: grid;
   }
 `;
 
@@ -62,7 +65,11 @@ export const A = styled.a`
 
 export const Ul = styled.ul`
   display: flex;
-  flex-direction: row;
+
+  @media (max-width: 800px) {
+    display: flex;
+    padding: 0px;
+  }
 `;
 
 export const TopStyle = styled.div`
