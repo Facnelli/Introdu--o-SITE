@@ -11,7 +11,7 @@ export const HeaderStyle = styled.header`
   justify-content: space-evenly;
   align-items: center;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
   }
 `;
 
@@ -29,7 +29,7 @@ export const Titulo = styled.h1`
   font-size: 32px;
   font-weight: bold;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     font-size: 20px;
   }
 `;
@@ -44,7 +44,7 @@ export const Nav = styled.nav`
 export const Li = styled.li`
   margin: 0 10px;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     padding: 0px;
     margin: 0px;
     font-size: 10px;
@@ -66,7 +66,7 @@ export const A = styled.a`
 export const Ul = styled.ul`
   display: flex;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     display: flex;
     padding: 0px;
   }
@@ -87,7 +87,7 @@ export const Imagem = styled.img`
   height: auto;
   float: left;
 
-  @media (max-width: 800px) {
+  @media (max-width: 700px) {
     width: 75px;
   }
 `;

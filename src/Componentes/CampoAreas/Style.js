@@ -21,4 +21,12 @@ export const Cards = styled.div`
   align-items: center;
   height: fit-content;
   background-color: white;
+
+  @media (max-width: 500px) {
+    width: 90%;
+    margin: 10px;
+  }
+`;
+export const H2 = styled.h2`
+  font-size: 18px;
 `;

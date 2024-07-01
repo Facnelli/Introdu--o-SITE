@@ -77,7 +77,7 @@ export const Button = styled.button`
     cursor: pointer;
   }
 
-  /* @media (max-width: 800px) {
+  /* @media (max-width: 500px) {
     height: 25px;
     width: 70px;
     padding: 0px;
@@ -112,7 +112,7 @@ export const EventosSection = styled.div`
   margin-bottom: 2%;
   justify-content: space-evenly;
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 90%;
@@ -127,7 +127,7 @@ export const Eventos = styled.div`
   justify-content: center;
   width: 60%;
 
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 90%;
@@ -135,19 +135,19 @@ export const Eventos = styled.div`
 `;
 
 export const H2 = styled.h2`
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     font-size: 20px;
   }
 `;
 
 export const P = styled.p`
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     font-size: 12px;
   }
 `;
 
 export const Li = styled.li`
-  @media (max-width: 800px) {
+  @media (max-width: 500px) {
     font-size: 12px;
   }
 `;

@@ -53,5 +53,9 @@ export const CampoAreasStyle = styled.div`
 
 export const Titulo = styled.h1`
   margin-top: 4%;
+  @media (max-width: 500px) {
+    margin-top: 30px;
+    font-size: 25px;
+  }
 `;
 export const Subtitulo = styled.h2``;
