@@ -16,12 +16,7 @@ export function Header() {
   const navigate = useNavigate();
   return (
     <HeaderStyle>
-      <img
-        style={{ width: "150px", height: "auto", float: "left" }}
-        src={EngSis}
-        alt="EngSis"
-        onClick={() => navigate("/")}
-      ></img>
+      <Imagem src={EngSis} alt="EngSis" onClick={() => navigate("/")}></Imagem>
       <div style={{ width: "40vh" }}></div>
       <TopStyle>
         <Navigation>

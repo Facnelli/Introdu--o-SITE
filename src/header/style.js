@@ -10,6 +10,10 @@ export const HeaderStyle = styled.header`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  @media (max-width: 800px) {
+    justify-content: first baseline;
+  }
 `;
 
 export const Navigation = styled.div`
@@ -25,8 +29,10 @@ export const Titulo = styled.h1`
   padding: 2%;
   font-size: 32px;
   font-weight: bold;
-  align-items: center;
-  text-align: center;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -38,6 +44,9 @@ export const Nav = styled.nav`
 
 export const Li = styled.li`
   margin: 0 10px;
+  @media (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
 
 export const A = styled.a`
@@ -67,4 +76,11 @@ export const TopStyle = styled.div`
 export const Imagem = styled.img`
   display: flex;
   justify-content: start;
+  width: 150px;
+  height: auto;
+  float: left;
+
+  @media (max-width: 800px) {
+    width: 75px;
+  }
 `;

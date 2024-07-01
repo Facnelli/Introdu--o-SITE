@@ -12,4 +12,7 @@ export const FooterInfo = styled.div`
   margin: 15px;
   letter-spacing: 1.5px;
   font-weight: 600;
+  @media (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
