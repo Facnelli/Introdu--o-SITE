@@ -55,11 +55,12 @@ export const Button = styled.button`
 `;
 
 export const Menu = styled.div`
-  display: grid;
+  display: flex;
   justify-content: center;
   margin-bottom: 20px;
 
   @media (max-width: 700px) {
+    display: grid;
     grid-template-columns: repeat(
       7,
       1fr
@@ -77,6 +78,8 @@ export const MenuItem = styled.button`
   margin: 0 5px;
   margin-top: 25px;
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
 
   @media (max-width: 700px) {
