@@ -55,9 +55,17 @@ export const Button = styled.button`
 `;
 
 export const Menu = styled.div`
-  display: flex;
+  display: grid;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(
+      7,
+      1fr
+    ); /* Adicione esta linha para criar 7 colunas */
+    gap: 10px; /* Espaçamento entre os botões */
+  }
 `;
 
 export const MenuItem = styled.button`
@@ -70,6 +78,12 @@ export const MenuItem = styled.button`
   margin-top: 25px;
   font-weight: bold;
   cursor: pointer;
+
+  @media (max-width: 700px) {
+    display: grid;
+    flex-direction: column;
+    padding: 7px;
+  }
 `;
 
 export const QuestionStyle = styled.h1`
@@ -77,6 +91,10 @@ export const QuestionStyle = styled.h1`
   font-weight: bold;
   margin-bottom: 10px;
   color: #333;
+
+  @media (max-width: 700px) {
+    font-size: 18px;
+  }
 `;
 
 export const perguntas = [

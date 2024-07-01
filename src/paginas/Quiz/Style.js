@@ -6,7 +6,11 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Titulo = styled.h1``;
+export const Titulo = styled.h1`
+  @media (max-width: 500px) {
+    font-size: 20px;
+  }
+`;
 
 export const Subtitulo = styled.h3``;
 
@@ -51,7 +55,7 @@ export const CampoQuizStyle = styled.div`
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  margin-top:10%;
+  margin-top: 10%;
   background-color: white;
   text-align: center;
 `;

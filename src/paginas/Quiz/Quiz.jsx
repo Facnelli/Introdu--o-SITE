@@ -9,6 +9,7 @@ import {
   QuestionStyle,
   perguntas,
 } from "./StyleQuiz";
+import { Titulo } from "./Style";
 
 function calcularPontuacao(respostasUsuario) {
   let acertos = 0;
@@ -54,7 +55,7 @@ export function Quiz() {
 
   return (
     <QuizContainer>
-      <h1>Quiz de Engenharia de Sistemas</h1>
+      <Titulo>Quiz de Engenharia de Sistemas</Titulo>
 
       <Menu>
         {perguntas.map((_, index) => (
@@ -103,4 +104,3 @@ export function Quiz() {
     </QuizContainer>
   );
 }
-  
