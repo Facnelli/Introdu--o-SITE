@@ -1,62 +1,105 @@
-import Questions from "../../Componentes/Questions/Questions";
-import { Footer } from "../../Footer/Footer";
-import { Header } from "../../header/header";
-import { Container } from "../Home/Style";
-import { Titulo, Subtitulo, QuestionsStyle, Button, ButtonDiv } from "./Style";
 import React, { useState } from "react";
-import { CiCircleChevDown } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
+import {
+  QuizContainer,
+  QuestionContainer,
+  Button as StyledButton,
+  Menu,
+  MenuItem,
+  QuestionStyle,
+  perguntas,
+} from "./StyleQuiz";
+
+function calcularPontuacao(respostasUsuario) {
+  let acertos = 0;
+
+  perguntas.forEach((pergunta, index) => {
+    if (respostasUsuario[index] === pergunta.resposta) {
+      acertos++;
+    }
+  });
+
+  return acertos;
+}
 
 export function Quiz() {
-  const [activeQuestion, setActiveQuestion] = useState(null); // Track the currently active question index
+  const [perguntaAtual, setPerguntaAtual] = useState(0);
+  const [respostasUsuario, setRespostasUsuario] = useState([]);
+  const navigate = useNavigate();
 
-  const toggleQuestion = (index) => {
-    // Function to handle click on a question icon
-    setActiveQuestion(index === activeQuestion ? null : index); // Toggle active state for clicked question
+  const handleProximaPergunta = () => {
+    setPerguntaAtual((prev) => Math.min(prev + 1, perguntas.length - 1));
+  };
+
+  const handlePerguntaAnterior = () => {
+    setPerguntaAtual((prev) => Math.max(prev - 1, 0));
+  };
+
+  const handleMenuClick = (index) => {
+    setPerguntaAtual(index);
+  };
+
+  const handleRespostaSelecionada = (respostaIndex) => {
+    setRespostasUsuario((prevRespostas) => {
+      const novasRespostas = [...prevRespostas];
+      novasRespostas[perguntaAtual] = respostaIndex;
+      return novasRespostas;
+    });
+  };
+
+  const handleSubmit = () => {
+    const pontuacao = calcularPontuacao(respostasUsuario);
+    navigate("/resultado", { state: { pontuacao, perguntas } });
   };
 
   return (
-    <Container>
-      <Titulo>Bem vindo ao Quiz de Engenharia de Sistemas</Titulo>
-      <Subtitulo>
-        Aqui você ira se deparar com cenários e possíveis soluções, escolha com
-        sabedoria.
-      </Subtitulo>
+    <QuizContainer>
+      <h1>Quiz de Engenharia de Sistemas</h1>
 
-      {Array.from(
-        { length: 4 },
-        (
-          _,
-          index // Render questions dynamically
-        ) => (
-          <QuestionsStyle key={index}>
-            {!activeQuestion || activeQuestion !== index ? ( // Show icon only if not active
-              <CiCircleChevDown
-                style={{ fontSize: "35px", display: "flex" }}
-                onClick={() => toggleQuestion(index)}
-              />
-            ) : null}
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                padding: "10px",
-              }}
-            ></div>
-            <Questions
-              numero={`Questão ${index + 1}`} // Use index for proper numbering
-              alternativa1="um"
-              alternativa2="doisss"
-              alternativa3="tresssss"
-              alternativa4="qua"
-              show={activeQuestion === index} // Show content only for active question
-            />
-          </QuestionsStyle>
-        )
-      )}
+      <Menu>
+        {perguntas.map((_, index) => (
+          <MenuItem
+            key={index}
+            active={index === perguntaAtual}
+            onClick={() => handleMenuClick(index)}
+          >
+            {index + 1}
+          </MenuItem>
+        ))}
+      </Menu>
 
-      <ButtonDiv>
-        <Button>Confirmar</Button>
-      </ButtonDiv>
-    </Container>
+      <QuestionContainer>
+        <QuestionStyle>{perguntas[perguntaAtual].pergunta}</QuestionStyle>
+        <ul>
+          {perguntas[perguntaAtual].opcoes.map((opcao, index) => (
+            <li key={index}>
+              <label>
+                <input
+                  type="radio"
+                  name="resposta"
+                  value={index}
+                  onChange={() => handleRespostaSelecionada(index)}
+                />
+                {opcao}
+              </label>
+            </li>
+          ))}
+        </ul>
+      </QuestionContainer>
+
+      <div>
+        <StyledButton
+          onClick={handlePerguntaAnterior}
+          disabled={perguntaAtual === 0}
+        >
+          Voltar
+        </StyledButton>
+        {perguntaAtual === perguntas.length - 1 ? (
+          <StyledButton onClick={handleSubmit}>Enviar</StyledButton>
+        ) : (
+          <StyledButton onClick={handleProximaPergunta}>Próxima</StyledButton>
+        )}
+      </div>
+    </QuizContainer>
   );
 }

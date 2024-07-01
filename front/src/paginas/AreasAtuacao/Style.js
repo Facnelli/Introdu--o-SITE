@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  margin-top:10%;
+  margin-top: 10%;
 `;
 
 export const CardsStyle = styled.div`
@@ -46,14 +46,12 @@ export const CampoAreasStyle = styled.div`
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  margin-top:10%;
+  margin-top: 10%;
   background-color: white;
   text-align: center;
 `;
 
-
-
 export const Titulo = styled.h1`
-  margin-top: 4%; 
+  margin-top: 4%;
 `;
-export const Subtitulo = styled.h3``;
+export const Subtitulo = styled.h2``;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SiteFooter = styled.footer`
+  position: relative;
   background-color: #dfdfdf;
   color: #272727;
   padding: 20px 0;

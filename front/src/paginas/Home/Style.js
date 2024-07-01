@@ -16,9 +16,8 @@ export const Section = styled.div`
 `;
 
 export const Container = styled.div`
-  width: 100vh;
+  width: 100%;;
   margin: 0 auto;
-  padding: 0 20px;
   justify-content: center;
 `;
 

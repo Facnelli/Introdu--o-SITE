@@ -16,7 +16,7 @@ export const QuestionsStyle = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  width: 100%;
+  width: 50%;
   background-color: #dfdfdf;
   border-radius: 10px;
   color: #272727;
@@ -43,4 +43,15 @@ export const Button = styled.button`
     color: #007bff;
     cursor: pointer;
   }
+`;
+
+export const CampoQuizStyle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top:10%;
+  background-color: white;
+  text-align: center;
 `;
