@@ -6,7 +6,7 @@ export const SlideBox = styled.div`
   position: relative;
   .slick-dots li.slick-active button:before {
     color: black;
-   min-height: 300px;
+    min-height: 300px;
   }
   .slideBox Imagem {
     width: 80%;
@@ -16,7 +16,7 @@ export const SlideBox = styled.div`
 
   .slick-dots li button:before {
     color: rgba(190, 182, 182, 0.932);
-    font-size: medium;
+    font-size: 8px;
   }
 `;
 export const Imagem = styled.img`
