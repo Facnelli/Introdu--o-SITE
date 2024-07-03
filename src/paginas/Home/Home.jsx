@@ -100,7 +100,7 @@ export function Home() {
       <Card>
         <Container>
           <CardContent>
-            <h3>Construa o futuro com a Engenharia de Sistemas</h3>
+            <H2>Construa o futuro com a Engenharia de Sistemas</H2>
             <P>
               Seja um profissional inovador e impactante na área da tecnologia.
               Descubra as infinitas possibilidades e abra portas para uma
@@ -115,8 +115,8 @@ export function Home() {
           <H2> Conheça a INCOSE! 🚀</H2>
           <h2>International Council on Systems Engineering (INCOSE)</h2>
 
-          <p>
-            <p>
+          <P>
+            <P>
               A{" "}
               <strong>
                 INCOSE (International Council on Systems Engineering) 🌐
@@ -128,9 +128,9 @@ export function Home() {
               complexos. Com membros em mais de 50 países, a INCOSE desempenha
               um papel crucial na padronização e na disseminação de
               conhecimentos na área de engenharia de sistemas.
-            </p>
+            </P>
 
-            <p>
+            <P>
               Na <strong>UFMG (Universidade Federal de Minas Gerais) 🎓</strong>
               , a conexão com a INCOSE se manifesta através de projetos de
               pesquisa e colaborações acadêmicas. A universidade é reconhecida
@@ -140,9 +140,9 @@ export function Home() {
               apenas enriquece o currículo dos estudantes, mas também contribui
               para o desenvolvimento de soluções inovadoras que impactam
               diversas indústrias.
-            </p>
+            </P>
 
-            <p>
+            <P>
               Através de workshops, conferências e programas de intercâmbio, a
               UFMG e a INCOSE fortalecem sua parceria para enfrentar desafios
               complexos da engenharia moderna. Os estudantes têm a oportunidade
@@ -152,9 +152,9 @@ export function Home() {
               os futuros engenheiros de sistemas para enfrentar as demandas
               globais e contribuir significativamente para o desenvolvimento
               tecnológico e científico. 🚀
-            </p>
+            </P>
 
-            <p>
+            <P>
               Com o apoio da INCOSE, a UFMG se destaca na formação de
               profissionais capacitados para lidar com os desafios emergentes da
               engenharia de sistemas. A cooperação entre academia e indústria
@@ -163,8 +163,8 @@ export function Home() {
               Além disso, eventos como simpósios e competições impulsionam a
               inovação e o intercâmbio de conhecimentos, fortalecendo ainda mais
               o vínculo entre as duas instituições. 🌟
-            </p>
-          </p>
+            </P>
+          </P>
           <ButtonContainer>
             <Button onClick={redirectToINCOSE}>✨Site INCOSE✨</Button>
           </ButtonContainer>
