@@ -112,20 +112,24 @@ export const perguntas = [
     resposta: 2,
   },
   {
-    pergunta:
-      "Qual destas áreas NÃO é uma área comum de atuação para Engenheiros de Sistemas?",
-    opcoes: ["Aeroespacial", "Bioengenharia", "Marketing Digital", "Logística"],
-    resposta: 2,
-  },
-  {
-    pergunta: "O que significa a sigla 'MVP' em Engenharia de Sistemas?",
+    pergunta: "O que é um sistema de feedback em Engenharia de Sistemas?",
     opcoes: [
-      "Most Valuable Professional",
-      "Minimum Viable Product",
-      "Maximum Value Proposition",
-      "Multi-Variate Processing",
+      "Um sistema que envia informações do usuário para o desenvolvedor.",
+      "Um sistema que monitora o desempenho do sistema e fornece informações para otimização.",
+      "Um sistema que permite que o usuário controle o sistema.",
+      "Um sistema que permite que o usuário personalize o sistema.",
     ],
     resposta: 1,
+  },
+  {
+    pergunta: "Qual é o papel da simulação em Engenharia de Sistemas?",
+    opcoes: [
+      "Testar o código do sistema.",
+      "Criar um protótipo do sistema.",
+      "Validar o design do sistema e avaliar seu desempenho antes da implementação.",
+      "Gerenciar os custos do projeto.",
+    ],
+    resposta: 2,
   },
   {
     pergunta:
@@ -203,34 +207,36 @@ export const perguntas = [
   },
   {
     pergunta:
-      "Quais são as principais ferramentas utilizadas em Engenharia de Sistemas?",
+      "Qual é o objetivo da etapa de Análise de Riscos em Engenharia de Sistemas?",
     opcoes: [
-      "Linguagens de programação como Java e Python.",
-      "Softwares de modelagem de sistemas como SysML.",
-      "Ferramentas de gerenciamento de projetos como o Microsoft Project.",
-      "Todas as alternativas anteriores.",
-    ],
-    resposta: 3,
-  },
-  {
-    pergunta: "Qual o papel da Engenharia de Sistemas na indústria 4.0?",
-    opcoes: [
-      "Desenvolver sistemas de automação e robótica para as fábricas inteligentes.",
-      "Integrar sistemas de informação e comunicação para otimizar a produção.",
-      "Gerenciar a complexidade dos sistemas ciberfísicos.",
-      "Todas as alternativas anteriores.",
-    ],
-    resposta: 3,
-  },
-  {
-    pergunta: "O que é um sistema sociotécnico?",
-    opcoes: [
-      "Um sistema que integra componentes sociais e técnicos.",
-      "Um sistema que utiliza inteligência artificial para interagir com humanos.",
-      "Um sistema que opera em ambientes sociais, como redes sociais.",
-      "Um sistema que é desenvolvido por equipes multidisciplinares.",
+      "Identificar e avaliar os riscos que podem afetar o desenvolvimento do sistema.",
+      "Criar um plano de testes para o sistema.",
+      "Gerenciar os custos do projeto.",
+      "Desenvolver a documentação do sistema.",
     ],
     resposta: 0,
+  },
+  {
+    pergunta:
+      "O que é a Engenharia de Confiabilidade e como ela se relaciona com a Engenharia de Sistemas?",
+    opcoes: [
+      "É uma disciplina que se concentra em garantir a segurança do sistema.",
+      "É uma disciplina que se concentra em garantir o desempenho do sistema.",
+      "É uma disciplina que se concentra em garantir a confiabilidade do sistema, ou seja, sua capacidade de funcionar como esperado ao longo do tempo.",
+      "É uma disciplina que se concentra em gerenciar os custos do projeto.",
+    ],
+    resposta: 2,
+  },
+  {
+    pergunta:
+      "Qual é a importância da arquitetura de sistemas em Engenharia de Sistemas?",
+    opcoes: [
+      "Definir a estrutura física do sistema.",
+      "Definir a estrutura lógica do sistema, incluindo seus componentes e suas interações.",
+      "Criar um plano de desenvolvimento para o sistema.",
+      "Gerenciar os riscos do projeto.",
+    ],
+    resposta: 1,
   },
   {
     pergunta:
