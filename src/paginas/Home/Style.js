@@ -14,6 +14,9 @@ export const Section = styled.div`
   display: flex;
   justify-content: center;
   //background-color: white;
+  @media (max-width: 500px) {
+    padding: 20px 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -144,18 +147,18 @@ export const Eventos = styled.div`
 export const H2 = styled.h2`
   text-align: center;
   @media (max-width: 500px) {
-    font-size: 20px;
+    font-size: 22px;
   }
 `;
 
 export const P = styled.p`
   @media (max-width: 500px) {
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
 
 export const Li = styled.li`
   @media (max-width: 500px) {
-    font-size: 12px;
+    font-size: 15px;
   }
 `;
