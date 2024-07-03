@@ -13,7 +13,7 @@ export const Section = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: white;
+  //background-color: white;
 `;
 
 export const Container = styled.div`
@@ -63,6 +63,11 @@ export const CardImage = styled.img`
   margin-top: 20px;
 `;
 
+export const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
 export const Button = styled.button`
   background-color: #fff;
   color: #007bff;
@@ -72,6 +77,7 @@ export const Button = styled.button`
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.2s ease;
+  margin: 0 auto;
 
   &:hover {
     background-color: #0056b3;
@@ -136,6 +142,7 @@ export const Eventos = styled.div`
 `;
 
 export const H2 = styled.h2`
+  text-align: center;
   @media (max-width: 500px) {
     font-size: 20px;
   }

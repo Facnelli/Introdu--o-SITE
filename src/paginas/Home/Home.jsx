@@ -17,10 +17,15 @@ import {
   H2,
   P,
   Li,
+  ButtonContainer,
 } from "./Style";
 
 export function Home() {
   const navigate = useNavigate();
+
+  const redirectToINCOSE = () => {
+    window.location.href = "https://www.incose.org";
+  };
 
   return (
     <>
@@ -105,15 +110,75 @@ export function Home() {
           </CardContent>
         </Container>
       </Card>
+      <Section>
+        <CardContentText>
+          <H2> Conheça a INCOSE! 🚀</H2>
+          <h2>International Council on Systems Engineering (INCOSE)</h2>
+
+          <p>
+            <p>
+              A{" "}
+              <strong>
+                INCOSE (International Council on Systems Engineering) 🌐
+              </strong>{" "}
+              é uma organização global dedicada ao avanço da engenharia de
+              sistemas. Fundada em 1990, a INCOSE promove a colaboração entre
+              profissionais, acadêmicos e indústria para desenvolver práticas e
+              padrões que melhoram a eficiência e a eficácia dos sistemas
+              complexos. Com membros em mais de 50 países, a INCOSE desempenha
+              um papel crucial na padronização e na disseminação de
+              conhecimentos na área de engenharia de sistemas.
+            </p>
+
+            <p>
+              Na <strong>UFMG (Universidade Federal de Minas Gerais) 🎓</strong>
+              , a conexão com a INCOSE se manifesta através de projetos de
+              pesquisa e colaborações acadêmicas. A universidade é reconhecida
+              por seu forte departamento de engenharia e sistemas, onde
+              professores e estudantes trabalham em conjunto com a INCOSE para
+              aplicar teorias avançadas em projetos práticos. Essa parceria não
+              apenas enriquece o currículo dos estudantes, mas também contribui
+              para o desenvolvimento de soluções inovadoras que impactam
+              diversas indústrias.
+            </p>
+
+            <p>
+              Através de workshops, conferências e programas de intercâmbio, a
+              UFMG e a INCOSE fortalecem sua parceria para enfrentar desafios
+              complexos da engenharia moderna. Os estudantes têm a oportunidade
+              de participar de projetos financiados pela INCOSE, além de acessar
+              recursos educacionais e de pesquisa de ponta. Essa colaboração
+              contínua não apenas promove o avanço acadêmico, mas também prepara
+              os futuros engenheiros de sistemas para enfrentar as demandas
+              globais e contribuir significativamente para o desenvolvimento
+              tecnológico e científico. 🚀
+            </p>
+
+            <p>
+              Com o apoio da INCOSE, a UFMG se destaca na formação de
+              profissionais capacitados para lidar com os desafios emergentes da
+              engenharia de sistemas. A cooperação entre academia e indústria
+              proporciona aos estudantes uma perspectiva ampla e atualizada do
+              campo, preparando-os para carreiras promissoras e impactantes.
+              Além disso, eventos como simpósios e competições impulsionam a
+              inovação e o intercâmbio de conhecimentos, fortalecendo ainda mais
+              o vínculo entre as duas instituições. 🌟
+            </p>
+          </p>
+          <ButtonContainer>
+            <Button onClick={redirectToINCOSE}>✨Site INCOSE✨</Button>
+          </ButtonContainer>
+        </CardContentText>
+      </Section>
 
       <EventosSection>
         <Eventos>
-          <H2>Teste seus conhecimentos sobre a Engenharia de Sistemas! 🚀</H2>
+          <H2>Teste seus conhecimentos sobre a Engenharia de Sistemas! 😎</H2>
           <P>
             Está pensando em embarcar no mundo da Engenharia de Sistemas, mas
             não sabe ao certo se essa é a área ideal para você? 🤔 Ou talvez
             você já seja apaixonado por tecnologia e quer descobrir o quanto
-            realmente sabe sobre essa área fascinante? 😎
+            realmente sabe sobre essa área fascinante?
           </P>
           <P>
             Seja qual for o seu caso, você chegou ao lugar certo! Preparamos um
