@@ -24,4 +24,7 @@ export const Imagem = styled.img`
   width: 100%;
   height: 400px;
   margin: 0 auto;
+  @media (max-width: 500px) {
+    height: 250px;
+  }
 `;
