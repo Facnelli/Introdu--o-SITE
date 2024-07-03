@@ -191,6 +191,9 @@ export function Home() {
             E aí, pronto para mergulhar no mundo da programação e criar seus
             próprios sites incríveis? ✨
           </P>
+          <Button onClick={() => navigate("/contatos")}>
+            Conheça os criadores 💻
+          </Button>
         </Eventos>
       </EventosSection>
     </>

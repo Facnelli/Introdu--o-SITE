@@ -33,7 +33,7 @@ export function Header() {
                 <A onClick={() => navigate("/quiz")}>Quiz</A>
               </Li>
               <Li>
-                <A>Contato</A>
+                <A onClick={() => navigate("/contatos")}>Contato</A>
               </Li>
             </Ul>
           </Nav>

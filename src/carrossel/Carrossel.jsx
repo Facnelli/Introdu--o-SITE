@@ -7,9 +7,7 @@ import { Imagem, SlideBox } from "./style";
 
 import Escola1 from "../Images/EscolaDeEngenharia.jpg";
 import mapa from "../Images/mapa.jpg";
-import FrenteEngenharia from "../Images/FrenteEngenharia.jpeg";
-
-import TextoSobreImagem from "../TextoAnimado/TextoAnimado";
+import FrenteEngenharia from "../Images/Frente engenharia.jpeg";
 
 const Carrossel = () => {
   const settings = {

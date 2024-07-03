@@ -14,8 +14,8 @@ import { Titulo } from "./Style";
 function calcularPontuacao(respostasUsuario) {
   let acertos = 0;
 
-  respostasUsuario.forEach((resposta, index) => {
-    if (resposta === perguntas[index].resposta) {
+  perguntas.forEach((pergunta, index) => {
+    if (respostasUsuario[index] === pergunta.resposta) {
       acertos++;
     }
   });
@@ -23,11 +23,9 @@ function calcularPontuacao(respostasUsuario) {
   return acertos;
 }
 
-export function Quiz() {
+export function Quizz() {
   const [perguntaAtual, setPerguntaAtual] = useState(0);
-  const [respostasUsuario, setRespostasUsuario] = useState(
-    Array(perguntas.length).fill(null)
-  );
+  const [respostasUsuario, setRespostasUsuario] = useState([]);
   const navigate = useNavigate();
 
   const handleProximaPergunta = () => {
@@ -81,7 +79,6 @@ export function Quiz() {
                   type="radio"
                   name="resposta"
                   value={index}
-                  checked={respostasUsuario[perguntaAtual] === index}
                   onChange={() => handleRespostaSelecionada(index)}
                 />
                 {opcao}

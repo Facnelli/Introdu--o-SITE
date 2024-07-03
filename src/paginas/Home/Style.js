@@ -13,6 +13,7 @@ export const Section = styled.div`
   align-items: center;
   display: flex;
   justify-content: center;
+  background-color: white;
 `;
 
 export const Container = styled.div`
@@ -87,7 +88,7 @@ export const Button = styled.button`
 `;
 export const CardContentText = styled.div`
   max-width: 90%;
-  background: #fff;
+  background-color: white;
   margin: 1%;
   padding: 20px; // Adicione espaçamento interno
   border-radius: 8px; // Ajuste o valor para controlar o arredondamento

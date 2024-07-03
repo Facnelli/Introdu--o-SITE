@@ -1,9 +1,4 @@
 import { Cards, CardsStyle, H2 } from "./Style";
-import software from "../../Images/DesenvolvimentoSoftware.jpg";
-import Automacao from "../../Images/Automacao.jpg";
-import Redes from "../../Images/Redes.jpg";
-import AI from "../../Images/AI.jpg";
-import IOT from "../../Images/IOT.jpg";
 
 export function CampoAreas({ titulo, descricao, imagem }) {
   return (
@@ -16,6 +11,17 @@ export function CampoAreas({ titulo, descricao, imagem }) {
           alt="imagem"
         ></img>
         <p>{descricao}</p>
+      </Cards>
+    </CardsStyle>
+  );
+}
+
+export function CampoContatos({ nome, email }) {
+  return (
+    <CardsStyle>
+      <Cards>
+        <H2>{nome}</H2>
+        <p>{email}</p>
       </Cards>
     </CardsStyle>
   );
