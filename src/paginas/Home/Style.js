@@ -72,6 +72,32 @@ export const ButtonContainer = styled.div`
 `;
 
 export const Button = styled.button`
+  background-color: #0056b3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: #fff;
+    color: #0056b3;
+    cursor: pointer;
+  }
+
+  /* @media (max-width: 500px) {
+    height: 25px;
+    width: 70px;
+    padding: 0px;
+    font-size: 10px;
+    border: solid 1px;
+  } */
+`;
+
+export const ButtonSB = styled.button`
   background-color: #fff;
   color: #007bff;
   padding: 10px 20px;
@@ -95,6 +121,7 @@ export const Button = styled.button`
     border: solid 1px;
   } */
 `;
+
 export const CardContentText = styled.div`
   max-width: 90%;
   background-color: white;

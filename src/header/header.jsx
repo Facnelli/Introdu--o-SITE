@@ -22,20 +22,18 @@ export function Header() {
         <Navigation>
           <Titulo> Engenharia de Sistemas</Titulo>
           <Nav>
-            <Ul id="main-Nav">
-              <Li>
-                <A onClick={() => navigate("/")}>Sobre o Curso</A>
-              </Li>
-              <Li>
-                <A onClick={() => navigate("/areas")}>Áreas de Atuação</A>
-              </Li>
-              <Li>
-                <A onClick={() => navigate("/quiz")}>Quiz</A>
-              </Li>
-              <Li>
-                <A onClick={() => navigate("/contatos")}>Contato</A>
-              </Li>
-            </Ul>
+            <Li>
+              <A onClick={() => navigate("/")}>Sobre o Curso</A>
+            </Li>
+            <Li>
+              <A onClick={() => navigate("/areas")}>Áreas de Atuação</A>
+            </Li>
+            <Li>
+              <A onClick={() => navigate("/quiz")}>Quiz</A>
+            </Li>
+            <Li>
+              <A onClick={() => navigate("/contatos")}>Contato</A>
+            </Li>
           </Nav>
         </Navigation>
       </TopStyle>

@@ -18,6 +18,7 @@ import {
   P,
   Li,
   ButtonContainer,
+  ButtonSB,
 } from "./Style";
 
 export function Home() {
@@ -106,7 +107,7 @@ export function Home() {
               Descubra as infinitas possibilidades e abra portas para uma
               carreira de sucesso.
             </P>
-            <Button onClick={() => navigate("/areas")}>Saiba Mais</Button>
+            <ButtonSB onClick={() => navigate("/areas")}>Saiba Mais</ButtonSB>
           </CardContent>
         </Container>
       </Card>

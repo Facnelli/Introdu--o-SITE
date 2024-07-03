@@ -6,23 +6,6 @@ import { Container, Name, P } from "./Style";
 export function Contatos() {
   return (
     <Container>
-      <h1 style={{ textAlign: "center" }}>Conheça quem criou esse site</h1>
-
-      <Grid>
-        <CampoContatos
-          nome="Arthur Silva Teixeira"
-          email="arthursilvateixeira@ufmg.br"
-        />
-        <CampoContatos nome="Guilherme Fachinelli" email="Facnelli@gmail.com" />
-        <CampoContatos
-          nome="Elias Daniel Moreira de Siqueira"
-          email="eliasdaniel_ms@outlook.com.br"
-        />
-        <CampoContatos
-          nome="Pedro Armando Oliveira Duarte"
-          email="pedro.arrmando@gmail.com"
-        />
-      </Grid>
       <Section>
         <CardContentText>
           <H2 style={{ textAlign: "center", margin: "20px" }}>
@@ -88,6 +71,23 @@ export function Contatos() {
           </ul>
         </CardContentText>
       </Section>
+
+      <h1 style={{ textAlign: "center" }}>Conheça quem criou esse site</h1>
+      <Grid>
+        <CampoContatos
+          nome="Arthur Silva Teixeira"
+          email="arthursilvateixeira@ufmg.br"
+        />
+        <CampoContatos nome="Guilherme Fachinelli" email="Facnelli@gmail.com" />
+        <CampoContatos
+          nome="Elias Daniel Moreira de Siqueira"
+          email="eliasdaniel_ms@outlook.com.br"
+        />
+        <CampoContatos
+          nome="Pedro Armando Oliveira Duarte"
+          email="pedro.arrmando@gmail.com"
+        />
+      </Grid>
     </Container>
   );
 }
